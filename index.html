@@ -1,57 +1,254 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Linkear el css con el html -->
-	<link rel="stylesheet" type="text/css" href="stylesIndex.css">
-<!-- Nombre de la pestaña -->
-	<title> Experiment-A.L./ AAA-Studio </title>
-
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Experiment-A.L.</title>
+	<link rel="stylesheet" type="text/css" href="style.css?v=2"/>
+	
 </head>
+	
 <body>
+<!-- Script que nos lleva a los anclas de los distintos apartados de la página -->
+<script>
+	function scrollToAnchor(aid){
+		var aTag = $("a[name='"+ aid +"']");
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	}
+	
+	function showScreen(name) {
+		var s = $('#screen');
+		s.fadeOut(100,function() { $('#screen img.screen').attr('src','art/'+name); s.fadeIn(100); });
+	}
+	function hideModal() {
+		$('.modal').fadeOut(100);
+	}
+</script>
 
-	<div id="contenedor">
-		<!--insertamos capa cabecera-->
-		<div id="cabecera"  >
-
-
-			<!--HACEMOS EL MENÚ DE LA CABECERA-->
-			<menu>
-			<div id="header">
-				<ul class="nav">
-					<li><a href="index.html">HOME</a></li>
-					<li><a>JUEGO</a>
-						<ul>
-							<li><a href="Historia.html" target="box1">HISTORIA </a></li>
-							<li><a href="Personajes.html" target="box1">PERSONAJES </a></li>
-							<li><a href="Galeria.html" target="box1">GALERIA</a></li>
-							<li><a href="Videos.html" target="box1">VIDEOS</a></li>
-						</ul></li>
-					<li><a href="Novedades.html" target="box1"> Novedades</a></li>
-				</ul>
-			</div>
-			</menu>
-			<a href="https://github.com/AAA-Studio"  target="_blank" >
-			<img src="Images/logo.jpg" width=178 height=180 alt="logo" align = right>
-				
-			</a>
-			<!--el comando br clear busca el primer margen libre y mete un salto de linea.-->
-			<br clear = right>
-			<br clear = right>
-			<a id="descargar" href="https://drive.google.com/file/d/0B4cHwfvtIYMeTzBFc21qQVFHZ2c/view?usp=sharing"  target="_blank" >
-			<img src="Images/Descargar_ICONO.jpg" width=178 height=60 alt="descargar_ICONO" align = right>
-				
-			</a>
+<div class="container">
+	<div class="page">
+		<div id="pcont"></div>
+		<div class="center">
+			<img class="logo" src="img/mainLogo.png"/>
+			<div class="logoSpace"></div>
+			<p>
+				<em>
+					Tus ojos pueden engañarte, confía en tu instinto.
+				</em>
+			</p>
+			<ul class="links">
+				<li><a href="https://github.com/AAA-Studio/Experiment-A.L." target="_blank" class="gh"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC_rinsDQPOQpD9wuB4kymMw" target="_blank" class="yt"></a></li>
+			</ul>
 		</div>
-	</div>
+			<a href="https://drive.google.com/drive/u/2/folders/0B4cHwfvtIYMeT05VRjdGVUo4VWM" target="_blank">
+			<img  src="img/download.png" align="right">
+			</a>
+			<br clear = middle>
+		<div class="section game">
+			<div class="top">
+				<div class="title">NOVEDADES</div>
+			</div>
+			<div class="main">
+			<p class="center">
+				Hola a todos. Estamos contentos de poder anunciar que en estos últimos días de desarrollo estamos trabajando de una manera muy ágil.
+			</p>
+			<p class="center">
+				Hemos puesto muchísimas ganas e ilusión en este proyecto. Los cambios que hemos metido son el personaje con animaciones, documentos que te irán contando la historia y muchós pequeños cambios gráficos.
+				</p>
+				<p class="center">
+				Nuestras prioridades actuales son la siguiente planta del hotel y enemigos para que empiece la acción.
+				</p>
+				<p class="center">
+				Hemos arreglado bugs relacionados con el cambio de habitaciones y las colisiones con algunas partes del mapa.
+			</p>
+			
+			<p class="center">
+				Muchas gracias por el apoyo, ¡estad atentos para más novedades!			
+			</p>
+			
+			<center>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/voVj2BHIJ5Y" frameborder="0" allowfullscreen></iframe>
+			</center>
+			
+			</div>			
+			<div class="bottom"></div>			
+		</div>
+		
+		<ul id="menu">
+			<li onclick="scrollToAnchor('game')">JUEGO</li>
+			<li onclick="scrollToAnchor('media')">GALERIA</li>
+			<li onclick="scrollToAnchor('faq')">FAQ</li>
+		</ul>
 
-	<!--insertamos capa columna central-->
-		<div id="columnaCentral">
-			<iframe name="box1" id="box1" src="" frameborder="1" scrolling="no" height="100%" width="100%"> 
-			</iframe>
-		<div id="Agradecimientos">
-					 
-			<iframe name="box2" id="box2" src="" frameborder="1" scrolling="no" height="100%" width="100%"> 
-			</iframe>
+		
+		<a name="game"></a>
+
+		<div class="section game">
+			<div class="top">
+				<div class="title">JUEGO</div>
+			</div>
+			<div class="main">
+			<p class="center">
+				Experiment-A.L es un survival en el que tendrás que resolver puzles y buscar la manera de sobrevivir. Estás durmiendo y te despiertas tras una pesadilla y unos ruidos raros en el pasillo de tu habitación. Lo único que recuerdas es que estás en un hotel donde se celebra una conferencia de psiquiatras y ves una nota en el suelo, es un informe médico. Ahora sólo tienes que explorar, resolver puzles, enfrentarte a tus miedos y encontrar la respuesta a todo lo que está pasando.
+			</p>
+			<div class="block">
+				<h2>Personajes</h2>
+				
+				<p>
+					En Experiment-A.L encarnas a un psiquiatra que está en tratamiento debido a la pérdida repentina de tu familia. Eres invitado a una convención de psiquiatras que organiza tu antigüo jefe Richar en un hotel a las afueras. Lo que no imaginabas era a las cosas que ibas a tener que enfrentarte una vez pasase la primera noche...
+				</p>
+				<!-- Prota -->
+				<div id="leaf" class="modal hero" style="display:none" onclick="hideModal()">
+					<div class="content">
+						<img src="img/popupLeaf.jpg"/>
+					</div>
+				</div>
+				<!-- Malo -->
+				<div id="akkad" class="modal hero" style="display:none" onclick="hideModal()">
+					<div class="content">
+						<img src="img/popupAkkad.jpg"/>
+					</div>
+				</div>
+				
+				<ul class="show">
+					<li class="ready" onclick="$('#leaf').fadeIn(100)"><img src="img/portraitLeafHover.png"/></li>
+					<li class="ready" onclick="$('#akkad').fadeIn(100)"><img src="img/portraitAkkadHover.png"/></li>
+					
+				</ul>
+				</div>
+				<div class="bg ancients">
+				<div class="text">
+					<h2>El mundo Real</h2>
+					<p>
+						En el mundo real podrás encontrarte con notas, llaves y píldoras. Las notas te servirán para conocer la historia y servirán para algunos puzles. Las llaves servirán para abrir puertas bloqueadas y las píldoras te servirán para paliar los efectos de tu enfermedad la cual te matará poco a poco mientras permanezcas en este mundo.
+					</p>
+				</div>
+			</div>
+
+			<div class="bg dark">
+				<div class="text">
+					<h2>El mundo Somniare</h2>
+					<p>
+						En el mundo somniare todo cambia, la realidad se distorsiona y todo se vuelve más inquietante. Aqui no te afecta tu enfermedad sino que habrá enemigos a los cuales te tendrás que enfrentar para poder avanzar en el juego. Las llaves seguirán siendo útiles en este mundo y muchas veces te verás obligado a cambiar de mundo a tu antojo para poder resolver algunos puzles. 
+					</p>
+				</div>
+			</div>
+			
+
+
+			
+			</div>
+			<div class="bottom"></div>
+		</div>
+
+		<a name="media"></a>
+		<div class="section media">
+			<div class="top">
+				<div class="title">GALERIA</div>
+			</div>
+			
+			<div class="modal screen" id="screen" style="display:none" onclick="$(this).fadeOut(100)">
+				<div class="content">
+					<div class="align">
+						<img class="screen"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="main">
+				<div class="block">
+					
+					<h2>Alpha in-game screenshots</h2>
+					
+					<ul class="show screen">
+						<li class="ready" onclick="showScreen('AlphaDesert01.jpg')"><img src="art/thumbnail_AlphaDesert01.png"/></li>
+						<li class="ready" onclick="showScreen('AlphaMountain01.jpg')"><img src="art/thumbnail_AlphaMountain01.png"/></li>
+						<li class="ready" onclick="showScreen('AlphaPlain01.jpg')"><img src="art/thumbnail_AlphaPlain01.png"/></li>
+						<li class="ready" onclick="showScreen('Alphascreen1.jpg')"><img src="art/thumbnail_Alphascreen01.png"/></li>
+						<li class="ready" onclick="showScreen('Alphascreen2.jpg')"><img src="art/thumbnail_Alphascreen02.png"/></li>
+						<li class="ready" onclick="showScreen('Alphascreen3.jpg')"><img src="art/thumbnail_Alphascreen03.png"/></li>
+					</ul>
+				</div>
+
+				<div class="block">
+					
+					<h2>Concept arts</h2>
+					
+					<ul class="show screen" style="height:255px">
+						<li class="ready" onclick="showScreen('World.jpg')"><img src="art/thumbnail_World.png"/></li>
+						<li class="ready" onclick="showScreen('DarknessConcept.jpg')"><img src="art/thumbnail_DarknessConcept.png"/></li>
+						<li class="ready" onclick="showScreen('ForestConcept.jpg')"><img src="art/thumbnail_ForestConcept01.png"/></li>
+						<li class="ready" onclick="showScreen('ForestConcept2.jpg')"><img src="art/thumbnail_ForestConcept02.png"/></li>
+						<li class="ready" onclick="showScreen('Landscapes.jpg')"><img src="art/thumbnail_Landscapes.png"/></li>
+						<li class="ready" onclick="showScreen('Ruins.jpg')"><img src="art/thumbnail_Ruins.png"/></li>
+						<li class="ready" onclick="showScreen('Leaf.jpg')"><img src="img/portraitLeafHover.png"/></li>
+						<li class="ready" onclick="showScreen('Akkad.jpg')"><img src="img/portraitAkkadHover.png"/></li>
+						<li class="ready" onclick="showScreen('Freya.jpg')"><img src="img/portraitFreyaHover.png"/></li>
+					</ul>
+				</div>
+				
+				<div style="padding:1px"></div>
+				
+			</div>
+			
+			<div class="bottom">
+			</div>
+		</div>
+		
+		<a name="faq"></a>
+
+		<div class="section faq">
+			<div class="top">
+				<div class="title">FAQ</div>
+			</div>
+			<div class="main">
+				<div class="block">
+				<dl>
+					<dt>¿Qué es Experiment-A.L?</dt>
+					<dd>Experiment-A.L es un juego que te hará reflexionar sobre qué es real y qué es ficción. Pero te recomiendo que para más información visites el apartado 
+					<a onclick="scrollToAnchor('game')">Juego</a>
+					</dd>
+					
+					<dt>¿Quiénes somos?</dt>
+					<dd>
+					Somos un grupo de estudiantes de Desarrollo de Videojuegos en la UCM. 
+					</dd>
+					
+					<dt>¿Cómo puedo contactaros?</dt>
+					<dd>
+					 Para cualquier ruego o pregunta, nuestro email es aaastudiogv@gmail.com
+					</dd>
+					
+
+				</dl>
+				</div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+		
+	</div>
+</div>
+
+<div id="footer">
+
+	
+	<div class="page">
+		<div class="copy">
+			<a href="https://github.com/AAA-Studio" target="_blank">2017 AAA-Studio</a>
+		</div>
+		<a href="https://github.com/AAA-Studio" target="_blank"><img class="slogo" src="img/logo.png"/></a>
+		<p>
+		Todos los recursos usado están creados por nosotros o con una licencia libre. Especial agradecimiento a Carlos León Aznar por la ayuda y motivación aportadas para este proyecto.
+		</p>
+	</div>
+	
+</div>
+<!-- Script encargado de hacer el scroll hasta el ancla -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Amaranth:400,700,400italic' rel='stylesheet' type='text/css'/>
+
+<script type="text/javascript" src="haxe.js"></script>
 
 </body>
 </html>
