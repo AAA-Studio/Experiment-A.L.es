@@ -243,7 +243,12 @@ img.part {
 .section ul.show li.ready {
 	cursor : pointer;
 }
-
+.section ul.show li.Al {
+	background : url("img/Alportrait.png");
+}
+.section ul.show li.Al:hover {
+	background : url("img/Alportrait.png");
+}
 .section ul.show li img {
 	opacity : 0.75;
 	filter : alpha(opacity=75);
