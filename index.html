@@ -8,21 +8,7 @@
 </head>
 	
 <body>
-<!-- Script que nos lleva a los anclas de los distintos apartados de la página -->
-<script>
-	function scrollToAnchor(aid){
-		var aTag = $("a[name='"+ aid +"']");
-		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
-	}
-	
-	function showScreen(name) {
-		var s = $('#screen');
-		s.fadeOut(100,function() { $('#screen img.screen').attr('src','art/'+name); s.fadeIn(100); });
-	}
-	function hideModal() {
-		$('.modal').fadeOut(100);
-	}
-</script>
+
 
 <div class="container">
 	<div class="page">
@@ -108,21 +94,21 @@
 					En Experiment-A.L encarnas a Peter Hyde, un psiquiatra en tratamiento debido a la trágica pérdida de su familia. Eres invitado a una convención de psiquiatría organizada por tu antigüo jefe y mentor, el doctor Richard T. Lo que no imaginabas era lo que ocurriría durante la primera noche...
 				</p>
 				<!-- Prota -->
-				<div id="Al" class="modal hero" style="display:none" onclick="hideModal()">
+				<div id="Al" class="modal hero" style="display:none" >
 					<div class="content">
 						<img src="img/Al.jpg"/>
 					</div>
 				</div>
 				<!-- Malo -->
-				<div id="DrT" class="modal hero" style="display:none" onclick="hideModal()">
+				<div id="DrT" class="modal hero" style="display:none" >
 					<div class="content">
 						<img src="img/Dr T.jpg"/>
 					</div>
 				</div>
 				
 				<ul class="show">
-					<li class="ready" onclick="$('#Al').fadeIn(100)"><img src="img/Alportrait.png"/></li>
-					<li class="ready" onclick="$('#DrT').fadeIn(100)"><img src="img/DrTportrait.png"/></li>
+					<li class="ready" ><img src="img/Alportrait.png"/></li>
+					<li class="ready" ><img src="img/DrTportrait.png"/></li>
 					
 				</ul>
 				</div>
@@ -162,7 +148,7 @@
 				<div class="title">GALERIA</div>
 			</div>
 			
-			<div class="modal screen" id="screen" style="display:none" onclick="$(this).fadeOut(100)">
+			<div class="modal screen" id="screen" style="display:none">
 				<div class="content">
 					<div class="align">
 						<img class="screen"/>
@@ -176,12 +162,12 @@
 					<h2>Alpha in-game screenshots</h2>
 					
 					<ul class="show screen">
-						<li class="ready" onclick="showScreen('AlphaDesert01.jpg')"><img src="art/thumbnail_AlphaDesert01.png"/></li>
-						<li class="ready" onclick="showScreen('AlphaMountain01.jpg')"><img src="art/thumbnail_AlphaMountain01.png"/></li>
-						<li class="ready" onclick="showScreen('AlphaPlain01.jpg')"><img src="art/thumbnail_AlphaPlain01.png"/></li>
-						<li class="ready" onclick="showScreen('Alphascreen1.jpg')"><img src="art/thumbnail_Alphascreen01.png"/></li>
-						<li class="ready" onclick="showScreen('Alphascreen2.jpg')"><img src="art/thumbnail_Alphascreen02.png"/></li>
-						<li class="ready" onclick="showScreen('Alphascreen3.jpg')"><img src="art/thumbnail_Alphascreen03.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_AlphaDesert01.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_AlphaMountain01.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_AlphaPlain01.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_Alphascreen01.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_Alphascreen02.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_Alphascreen03.png"/></li>
 					</ul>
 				</div>
 
@@ -190,12 +176,12 @@
 					<h2>Concept arts</h2>
 					
 					<ul class="show screen" style="height:255px">
-						<li class="ready" onclick="showScreen('World.jpg')"><img src="art/thumbnail_World.png"/></li>
-						<li class="ready" onclick="showScreen('DarknessConcept.jpg')"><img src="art/thumbnail_DarknessConcept.png"/></li>
-						<li class="ready" onclick="showScreen('ForestConcept.jpg')"><img src="art/thumbnail_ForestConcept01.png"/></li>
-						<li class="ready" onclick="showScreen('ForestConcept2.jpg')"><img src="art/thumbnail_ForestConcept02.png"/></li>
-						<li class="ready" onclick="showScreen('Landscapes.jpg')"><img src="art/thumbnail_Landscapes.png"/></li>
-						<li class="ready" onclick="showScreen('Ruins.jpg')"><img src="art/thumbnail_Ruins.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_World.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_DarknessConcept.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_ForestConcept01.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_ForestConcept02.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_Landscapes.png"/></li>
+						<li class="ready" ><img src="art/thumbnail_Ruins.png"/></li>
 					</ul>
 				</div>
 				
@@ -248,9 +234,8 @@
 	<div class="page">
 		<div class="copy">
 			<a href="https://github.com/AAA-Studio" target="_blank">2017 AAA-Studio</a>
-			<!--
 			<a><img src="http://www.worldflagcounter.com/cpo/" alt="Flag Counter" align="right"></a>
-				-->
+
 		</div>
 		<a href="https://github.com/AAA-Studio" target="_blank"><img class="slogo" src="img/logo.png"/></a>
 		<p>
@@ -260,10 +245,8 @@
 	</div>
 	
 </div>
-<!-- Script encargado de hacer el scroll hasta el ancla -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-
+<link href='http://fonts.googleapis.com/css?family=Amaranth:400,700,400italic' rel='stylesheet' type='text/css'/>
 
 <script type="text/javascript" src="haxe.js"></script>
 
