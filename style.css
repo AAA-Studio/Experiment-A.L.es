@@ -11,7 +11,7 @@ a:hover {
 	text-decoration : underline;
 }
 body, a {
-	color : #C0DDE5;
+	color : #000000;
 }
 a img {
 	border : none;
@@ -100,13 +100,13 @@ img.part {
 	margin-bottom : 50px;
 }
 .section .top {
-	height : 140px;
+	height : 160px;
 	background-image : url("img/sectionBG_top.png");
 	text-align : center;
 }
 .section .top .title {
 	padding-top : 60px;
-	color : #C0DDE5;
+	color : #000000;
 	font-weight : bold;
 	font-size : 25px;
 }
@@ -118,18 +118,24 @@ img.part {
 	margin : 0px;
 	font-weight : normal;
 	font-style : italic;
-	color : #E7F6FB;
+	color :#000000;
 	margin-bottom : 5px;
 }
 .section p {
 	margin : 0px;
-	color : #C0DDE5;
+	color :#000000;
 }
 .section p.light {
-	color : #E7F6FB;
+	color : #000000;
 	font-size : 110%;
 }
 .section p.center {
+	padding : 0px 115px;
+	text-align : center;
+	margin-bottom : 30px;
+
+}
+.section p.center2 {
 	padding : 0px 115px;
 	text-align : center;
 	margin-bottom : 30px;
@@ -194,7 +200,7 @@ img.part {
 	background-image : url("img/sectionBG_bottom.png");
 }
 .section dl dt {
-	color : #E7F6FB;
+	color : #000000;
 	font-size : 110%;
 }
 .section dl dd {
@@ -205,13 +211,16 @@ img.part {
 	padding : 10px 0px;
 	background-color : #181f23;
 	bottom : 0px;
+	color: #ffffff
 }
 #footer .copy {
 	text-align : center;
 	margin-top : -80px;
 	margin-bottom : 80px;
+	color: #ffffff
 }
 #footer .copy a {
+	color: #ffffff
 	opacity : 0.5;
 	filter : alpha(opacity=50);
 	zoom : 1;
