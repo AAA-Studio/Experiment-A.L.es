@@ -95,7 +95,36 @@ ul li {
 img.part {
 	position : absolute;
 }
-
+#menu {
+	margin : 0px 231px;
+	width : 556px;
+	height : 67px;
+	padding : 0px;
+	padding-left : 22px;
+	background : url("img/menuBG.png");
+	margin-bottom : 50px;
+}
+#menu li {
+	font-weight : bold;
+	font-size : 20px;
+	padding-top : 20px;
+	height : 47px;
+	color : #242f34;
+	display : inline-block;
+	zoom : 1;
+	*display : inline;
+	width : 177px;
+	text-align : center;
+	text-shadow : rgba(36,47,52,0.5) 0px 0px 2px;
+	user-select : none;
+	-moz-user-select : none;
+	-webkit-user-select : none;
+	cursor : pointer;
+}
+#menu li:hover {
+	color : #000000;
+	text-shadow : rgba(36,47,52,1) 0px 2px 2px;
+}
 .section {
 	margin-bottom : 50px;
 }
@@ -224,33 +253,3 @@ img.part {
 
 
 
-#menu {
-	margin : 0px 231px;
-	width : 556px;
-	height : 67px;
-	padding : 0px;
-	padding-left : 22px;
-	background : url("img/menuBG.png");
-	margin-bottom : 50px;
-}
-#menu li {
-	font-weight : bold;
-	font-size : 20px;
-	padding-top : 20px;
-	height : 47px;
-	color : #242f34;
-	display : inline-block;
-	zoom : 1;
-	*display : inline;
-	width : 177px;
-	text-align : center;
-	text-shadow : rgba(36,47,52,0.5) 0px 0px 2px;
-	user-select : none;
-	-moz-user-select : none;
-	-webkit-user-select : none;
-	cursor : pointer;
-}
-#menu li:hover {
-	color : #000000;
-	text-shadow : rgba(36,47,52,1) 0px 2px 2px;
-}
