@@ -109,21 +109,21 @@
 					En Experiment-A.L encarnas a Peter Hyde, un psiquiatra en tratamiento debido a la trágica pérdida de su familia. Eres invitado a una convención de psiquiatría organizada por tu antigüo jefe y mentor, el doctor Richard T. Lo que no imaginabas era lo que ocurriría durante la primera noche...
 				</p>
 				<!-- Prota -->
-				<div id="Al" class="modal hero" style="display:none"  >
+				<div id="Al" class="modal hero" style="display:none" onclick="hideModal()" >
 					<div class="content">
 						<img src="img/Al.jpg"/>
 					</div>
 				</div>
 				<!-- Malo -->
-				<div id="DrT" class="modal hero" style="display:none" >
+				<div id="DrT" class="modal hero" style="display:none" onclick="hideModal()" >
 					<div class="content">
 						<img src="img/Dr T.jpg"/>
 					</div>
 				</div>
 				
 				<ul class="show">
-					<li class="ready" ><img src="img/Alportrait.png"/></li>
-					<li class="ready" ><img src="img/DrTportrait.png"/></li>
+					<li class="ready"  onclick="$('#Al').fadeIn(100)"><img src="img/Alportrait.png"/></li>
+					<li class="ready"  onclick="$('#DrT').fadeIn(100)"><img src="img/DrTportrait.png"/></li>
 					
 				</ul>
 				</div>
@@ -163,7 +163,7 @@
 				<div class="title">GALERIA</div>
 			</div>
 			
-			<div class="modal screen" id="screen" style="display:none">
+			<div class="modal screen" id="screen" style="display:none" onclick="$(this).fadeOut(100)" >
 				<div class="content">
 					<div class="align">
 						
