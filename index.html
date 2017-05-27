@@ -7,7 +7,20 @@
 </head>
 	
 <body>
-
+<script>
+	function scrollToAnchor(aid){
+		var aTag = $("a[name='"+ aid +"']");
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	}
+	
+	function showScreen(name) {
+		var s = $('#screen');
+		s.fadeOut(100,function() { $('#screen img.screen').attr('src','art/'+name); s.fadeIn(100); });
+	}
+	function hideModal() {
+		$('.modal').fadeOut(100);
+	}
+</script>
 
 <div class="container">
 	<div class="page">
@@ -59,7 +72,11 @@
 			<div class="bottom"></div>			
 		</div>
 		
-		
+		<ul id="menu">
+			<li onclick="scrollToAnchor('game')">JUEGO</li>
+			<li onclick="scrollToAnchor('media')">GALERIA</li>
+			<li onclick="scrollToAnchor('faq')">FAQ</li>
+		</ul>
 
 		
 		<a name="game"></a>
@@ -92,7 +109,7 @@
 					En Experiment-A.L encarnas a Peter Hyde, un psiquiatra en tratamiento debido a la trágica pérdida de su familia. Eres invitado a una convención de psiquiatría organizada por tu antigüo jefe y mentor, el doctor Richard T. Lo que no imaginabas era lo que ocurriría durante la primera noche...
 				</p>
 				<!-- Prota -->
-				<div id="Al" class="modal hero" style="display:none" >
+				<div id="Al" class="modal hero" style="display:none"  >
 					<div class="content">
 						<img src="img/Al.jpg"/>
 					</div>
@@ -149,9 +166,9 @@
 			<div class="modal screen" id="screen" style="display:none">
 				<div class="content">
 					<div class="align">
-						<!--
+						
 						<img class="screen"/>
-					-->
+					
 					</div>
 				</div>
 			</div>
@@ -160,7 +177,7 @@
 				
 				<div class="block">
 					
-					<h2>Alpha in-game screenshots</h2>
+					<h2><b>Screenshots</b></h2>
 					
 					<ul class="show screen">
 						<li class="ready" ><img src="art/thumbnail_AlphaDesert01.png"/></li>
@@ -169,20 +186,6 @@
 						<li class="ready" ><img src="art/thumbnail_Alphascreen01.png"/></li>
 						<li class="ready" ><img src="art/thumbnail_Alphascreen02.png"/></li>
 						<li class="ready" ><img src="art/thumbnail_Alphascreen03.png"/></li>
-					</ul>
-				</div>
-
-				<div class="block">
-					
-					<h2>Concept arts</h2>
-					
-					<ul class="show screen" style="height:255px">
-						<li class="ready" ><img src="art/thumbnail_World.png"/></li>
-						<li class="ready" ><img src="art/thumbnail_DarknessConcept.png"/></li>
-						<li class="ready" ><img src="art/thumbnail_ForestConcept01.png"/></li>
-						<li class="ready" ><img src="art/thumbnail_ForestConcept02.png"/></li>
-						<li class="ready" ><img src="art/thumbnail_Landscapes.png"/></li>
-						<li class="ready" ><img src="art/thumbnail_Ruins.png"/></li>
 					</ul>
 				</div>
 				
@@ -250,6 +253,8 @@
 
 
 <script type="text/javascript" src="haxe.js"></script>
+<script type="text/javascript" src="JQuery.js"></script>
+
 
 </body>
 </html>
