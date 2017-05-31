@@ -26,9 +26,9 @@
 	<div class="page">
 		<div id="pcont"></div>
 		<div class="center">
-			<!--
+		
 			<img class="logo" src="img/mainLogo.png"/>
-		-->
+		
 			<div class="logoSpace"></div>
 			<p style="color:#FF0000";>
 				<em  >
@@ -88,10 +88,11 @@
 			<div class="main">
 			<p class="center">
 			Experiment-A.L. es un juego donde los trastornos mentales y la dualidad son la base de su trama. El juego trata de aprovechar las posibilidades que ambos temas ofrecen para crear una experiencia única. 
+
 			</p>
 			
 			<p class="center">
-			Cuando el jugador no es capaz de diferenciar qué es real y qué no, se crea una distorsión que se convierte en el elemento clave para la resolución del problema,
+		Cuando el jugador no es capaz de diferenciar qué es real y qué no, se crea una distorsión que se convierte en el elemento clave para la resolución del problema,
 			ya que es posible que lo que podamos hacer en una realidad no lo sea en la otra. 
 			</p>
 			
@@ -127,13 +128,13 @@
 					
 				</ul>
 				</div>
-				<div class="bg ancients">
+				<div class="bg real">
 				<div class="text">
 					<h2><b>El mundo Real</b> </h2>
 					<p>
 						En el mundo real, te podrás encontrar con informes, llaves y demás recursos consumibles que te ayudarán en tu aventura.
-						Los informes médicos te servirán para conocer qué ha ocurrido y podrán contener pistas acerca de algunos puzles. 
-						Pero date prisa...una extraña enfermedad te limita tu tiempo. El reloj está en marcha. 
+ 						Los informes médicos te servirán para conocer qué ha ocurrido y podrán contener pistas acerca de algunos puzles. 
+ 						Pero date prisa...una extraña enfermedad te limita tu tiempo. El reloj está en marcha. 
 						
 					</p>
 				</div>
@@ -180,16 +181,17 @@
 					<h2><b>Screenshots</b></h2>
 					
 					<ul class="show screen">
-						<li class="ready" ><img src=""/></li>
-						<li class="ready" ><img src=""/></li>
-						<li class="ready" ><img src=""/></li>
-						<li class="ready" ><img src=""/></li>
-						<li class="ready" ><img src=""/></li>
-						<li class="ready" ><img src=""/></li>
+						<li class="ready" onclick="showScreen('1.png')" ><img src="art/thumbnail_1.png"/></li>
+						<li class="ready" onclick="showScreen('2.png')"><img src="art/thumbnail_2.png"/></li>
+						<li class="ready" onclick="showScreen('3.png')"><img src="art/thumbnail_3.png"/></li>
+						<li class="ready" onclick="showScreen('4.png')"><img src="art/thumbnail_4.png"/></li>
+						<li class="ready" onclick="showScreen('5.png')"><img src="art/thumbnail_5.png"/></li>
+						<li class="ready" onclick="showScreen('6.png')"><img src="art/thumbnail_6.png"/></li>
+						<li class="ready" onclick="showScreen('7.png')"><img src="art/thumbnail_7.png"/></li>
 					</ul>
 				</div>
 				
-				<div style="padding:1px"></div>
+				<div style="padding:20px"></div>
 				
 			</div>
 			
@@ -208,7 +210,7 @@
 				<dl>
 					<dt><b>¿Qué es Experiment-A.L?</b> </dt>
 					<dd>Experiment-A.L es un juego desarrollado por un pequeño grupo de estudiantes de la UCM, que te hará reflexionar sobre la realidad y la ficción en un mundo de locura y oscuridad.
-					Para más informacion visita el apartado <b>Juego</b>.
+					Para más informacion visita el apartado<a onclick="scrollToAnchor('game')"> <b>Juego</b> </a>.
 					</dd>
 					
 					<dt><b>¿Quiénes somos?</b> </dt>
@@ -245,6 +247,7 @@
 	
 		<p>
 		Todos los recursos usados están creados por nosotros o con una licencia libre. Especial agradecimiento a Carlos León Aznar por la ayuda y motivación aportadas para este proyecto.
+
 		</p>
 
 	</div>

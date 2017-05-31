@@ -1,7 +1,7 @@
 body {
 	margin : 0;
 	padding : 0;
-	background-color : #242f34;
+	background-color : #000000;
 	
 }
 a {
@@ -100,7 +100,7 @@ ul li {
 	z-index : 1;
 }
 .page .center .logoSpace {
-	height : 289px;
+	height : 400px;
 }
 .page .center .q2 {
 	margin-top : 60px;
@@ -264,19 +264,18 @@ img.part {
 	filter : alpha(opacity=100);
 	zoom : 1;
 }
-.section .bg.world {
-	background-image : url("img/worldBG.png");
+
+.section .bg.real {
+	background-image : url("img/realBG.png");
+	background-position : 600px;
 }
-.section .bg.ancients {
-	background-image : url("img/ruinsBG.png");
-	background-position : 450px;
-}
-.section .bg.ancients .text {
+.section .bg.real .text {
 	padding-left : 50px;
 	padding-right : 440px;
 }
 .section .bg.dark {
 	background-image : url("img/darknessBG.png");
+	background-position : 5px;
 }
 .section .bottom {
 	height : 94px;
